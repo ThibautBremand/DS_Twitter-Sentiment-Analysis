@@ -44,11 +44,11 @@ With the current dataset, using this algorithm, We obtain 76% accuracy.
 One main objective is to keep gather tweets through the Twitter API and calculate the polarity of these using emoticons. These would be then used by our model to keep learning and improve it's accuracy.  
 
 
-#### Author : Thibaut BREMAND  
+## Author : Thibaut BREMAND  
 - thibaut.bremand [at] gmail.com
 - https://github.com/ThibautBremand
 
-#### Sources :  
+### Sources :  
 - https://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf : The original research paper which inspered me
 - http://help.sentiment140.com  : The original training dataset  
 - https://stackabuse.com/the-naive-bayes-algorithm-in-python-with-scikit-learn/ : Explanation of the methodology   
