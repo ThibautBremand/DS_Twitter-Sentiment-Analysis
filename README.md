@@ -1,6 +1,6 @@
 # Data Science - Twitter Sentiment Analysis
 A Data Science project on Python Jupyter Notebook.  
-Prediction of the **polarity of tweets using a Naive Bayes classification model**.  
+Prediction of the **polarity of tweets using a Naive Bayes classification model**, based on **emoticons**.  
 
 ## 1. Context and objective
 The main inspiration for this notebook comes from this research paper from students of the Stanford University (**Sentiment410 project**).  
@@ -8,7 +8,7 @@ https://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf
 
 For the moment, I use the same dataset as them, which is available under : http://help.sentiment140.com/for-students
 
-The objective is being able to predict the polarity of a tweet, based on a classification model buildt from a large dataset of classified tweets.  
+The objective is being able to predict the polarity of a tweet, based on a classification model buildt from a large dataset of classified tweets. **The tweets are classified depending upon the emoticons they contain**, which means that we don't use a referential of positive and negative words, but we build a ML model using *'polarity by emoticon classification'*.  
 
 ## 2. Training Dataset (Calculation of polarity and Data Wrangling)  
 
