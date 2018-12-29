@@ -41,7 +41,7 @@ I used the Multinomial Naive Bayes Classifier algorithm, which is well-suited fo
 With the current dataset, using this algorithm, We obtain 76% accuracy.
 
 ## 4. What's next  
-One main objective is to keep gather tweets through the Twitter API and calculate the polarity of these using emoticons. These would be then used by our model to keep learning and improve it's accuracy.  
+One main objective is to automatically keep gathering tweets through the Twitter API and calculate the polarity of these using emoticons. These would be then used by our model to keep learning and improve it's accuracy.  
 
 
 ## Author : Thibaut BREMAND  
