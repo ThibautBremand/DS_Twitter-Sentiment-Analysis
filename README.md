@@ -26,8 +26,10 @@ The method to calculate the polarity of the tweets in the training dataset is th
 | :D |
 | =) |
 
+[Example of negative tweet used in the Sentiment410 training set](https://twitter.com/Karoli/status/1467811193)  
+
 ### 2.2 Data Wrangling  
-The Data Wrangling method I chose ot used is detailed under : https://stackabuse.com/the-naive-bayes-algorithm-in-python-with-scikit-learn  
+The Data Wrangling method I chose to use is detailed under : https://stackabuse.com/the-naive-bayes-algorithm-in-python-with-scikit-learn  
 Each tweet is prepared as such :  
 - The tweets are converted into lowercase
 - The punctuation is removed
@@ -49,5 +51,5 @@ One main objective is to keep gather tweets through the Twitter API and calculat
 #### Sources :  
 - https://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf : The original research paper which inspered me
 - http://help.sentiment140.com  : The original training dataset  
-- https://stackabuse.com/the-naive-bayes-algorithm-in-python-with-scikit-learn/ : Explanation of the methodology. 
+- https://stackabuse.com/the-naive-bayes-algorithm-in-python-with-scikit-learn/ : Explanation of the methodology   
 - https://www.datacamp.com/community/tutorials/naive-bayes-scikit-learn : More details about the Naive Bayes classification
