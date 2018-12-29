@@ -8,7 +8,7 @@ https://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf
 
 For the moment, I use the same dataset as them, which is available under : http://help.sentiment140.com/for-students
 
-The objective is being able to predict the polarity of a tweet, based on a classification model buildt from a large dataset of classified tweets. **The tweets are classified depending upon the emoticons they contain**, which means that we don't use a referential of positive and negative words, but we build a ML model using *'polarity by emoticon classification'*.  
+The objective is being able to predict the polarity of a tweet, based on a classification model buildt from a large dataset of classified tweets. **The tweets are classified depending upon the emoticons they contain**, which means that we won't use a sentiment lexicon based approach (referential of positive and negative words), but we build a ML model using **polarity by emoticon classification**.  
 
 ## 2. Training Dataset (Calculation of polarity and Data Wrangling)  
 
