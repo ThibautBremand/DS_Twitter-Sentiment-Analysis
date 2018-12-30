@@ -2,6 +2,8 @@
 A Data Science project on Python Jupyter Notebook.  
 Prediction of the **polarity of tweets using a Naive Bayes classification model**, based on **emoticons**.  
 
+One Notebook is about **building the dataset using the Twitter API**, the other one is about **training the Machine Learning model to predict the polarity of new tweets**.
+
 ## 1. Context and objective
 The main inspiration for this notebook comes from this research paper from students of the Stanford University (**Sentiment410 project**).  
 https://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf  
