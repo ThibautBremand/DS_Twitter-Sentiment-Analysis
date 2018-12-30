@@ -32,13 +32,16 @@ The method to calculate the polarity of the tweets in the training dataset is th
 The Data Wrangling method I chose to use is detailed under : https://stackabuse.com/the-naive-bayes-algorithm-in-python-with-scikit-learn  
 Each tweet is prepared as such :  
 - The tweets are converted into lowercase
+- The @username are replaced with *USERNAME* tokens
+- The URLs are replaced with *URL* tokens
+- Any letter occurring more than two times in a row is replaced with two occurrences
 - The punctuation is removed
 - The tweets are normalized using a word stemming method : the Porter Stemmer algorithm is one of the most popular one  
 - The tweets are converted into occurences using CountVectorizer, and weighted using Term Frequency Inverse Document Frequency  
 
 ## 3. Model training  
 I used the Multinomial Naive Bayes Classifier algorithm, which is well-suited for text classification problems.  
-With the current dataset, using this algorithm, We obtain 76% accuracy.
+With the current dataset, using this algorithm, **we obtain 77% accuracy**.
 
 ## 4. What's next  
 One main objective is to automatically keep gathering tweets through the Twitter API and calculate the polarity of these using emoticons. These would be then used by our model to keep learning and improve it's accuracy.  
