@@ -53,7 +53,7 @@ With the current dataset, using this algorithm, **we obtain 77% accuracy**.
 One main objective is to automatically keep gathering tweets through the Twitter API and calculate the polarity of these using emoticons. These would be then used by our model to keep learning and improve it's accuracy.  
 A notebook explaining how to gather data from the API is available in this repo, the aim is to automatically use this method to gather data continuously.  
 
-Another objective is to adapt this model to other examples, for example French which is my mother tongue.  
+Another objective is to adapt this model to other languages, for example French which is my mother tongue.  
 
 
 ## Author : Thibaut BREMAND  
