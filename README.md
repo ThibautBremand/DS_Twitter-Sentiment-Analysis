@@ -43,6 +43,8 @@ Each tweet is prepared as such :
 - Any letter occurring more than two times in a row is replaced with two occurrences
 - The punctuation is removed
 - The tweets are normalized using a word stemming method : the Porter Stemmer algorithm is one of the most popular one  
+
+In order to perform machine learning on text documents, we first need to turn the text content into numerical feature vectors :  
 - The tweets are converted into occurences using CountVectorizer, and weighted using Term Frequency Inverse Document Frequency  
 
 ## 3. Model training  
