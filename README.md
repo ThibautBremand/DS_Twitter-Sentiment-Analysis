@@ -45,10 +45,13 @@ Each tweet is prepared as such :
 - The tweets are normalized using a word stemming method : the Porter Stemmer algorithm is one of the most popular one  
 
 In order to perform machine learning on text documents, we first need to turn the text content into numerical feature vectors :  
-- The tweets are converted into occurences using CountVectorizer, and weighted using Term Frequency Inverse Document Frequency  
+- The tweets are tokenized : the text is converted into arrays of tokens. I chose to use **Unigrams** as tokens, so each token will contain one word.  
+- The tokens are converted into word occurences using **CountVectorizer**  
+- These occurences are weighted and normalized using **Term Frequency Inverse Document Frequency (TFIDF)**. This technique intends to reflect how important a word is in the collection of tweets, by pounding it : Stop words impact will be limited, rare words will get special weight.  
 
 ## 3. Model training  
 I used the Multinomial Naive Bayes Classifier algorithm, which is well-suited for text classification problems.  
+Also, this algorithm benefits from a very fast cumputation time.
 With the current dataset, using this algorithm, **we obtain 77% accuracy**.
 
 ## 4. What's next  
