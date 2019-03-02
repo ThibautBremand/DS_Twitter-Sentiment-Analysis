@@ -112,7 +112,9 @@ Another objective is to adapt this model to other languages, for example French 
 - https://github.com/ThibautBremand
 
 ### Sources :  
-- https://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf : The original research paper which inspered me
-- http://help.sentiment140.com  : The original training dataset  
-- https://stackabuse.com/the-naive-bayes-algorithm-in-python-with-scikit-learn/ : Explanation of the methodology   
+- https://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf : The original research paper which inspired me
+- http://help.sentiment140.com : The original training dataset
+- https://stackabuse.com/the-naive-bayes-algorithm-in-python-with-scikit-learn/ : Explanation of the methodology.
 - https://www.datacamp.com/community/tutorials/naive-bayes-scikit-learn : More details about the Naive Bayes classification
+- https://towardsdatascience.com/solving-a-simple-classification-problem-with-python-fruits-lovers-edition-d20ab6b071d2 : Algorithms comparison using a simple classification problem
+- https://medium.com/@sangha_deb/naive-bayes-vs-logistic-regression-a319b07a5d4c : Naive Bayes and Logistic Regression algorithms comparison
