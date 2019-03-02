@@ -91,7 +91,7 @@ I used the following algorithms which benefit from a very fast cumputation time.
 
 Here is the accuracy for each algorithm, considering that the tokens are made of **Unigrams**.  
 
-| Algorithm           | Accuracy on training set | Accuracy on text set |
+| Algorithm           | Accuracy on training set | Accuracy on test set |
 |---------------------|--------------------------|----------------------|
 | Naive Bayes         | 0.81                     | 0.77                 |
 | SVM (Linear)        | 0.42                     | 0.35                 |
