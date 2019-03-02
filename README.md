@@ -50,9 +50,18 @@ In order to perform machine learning on text documents, we first need to turn th
 - These occurences are weighted and normalized using **Term Frequency Inverse Document Frequency (TFIDF)**. This technique intends to reflect how important a word is in the collection of tweets, by pounding it : Stop words impact will be limited, rare words will get special weight.  
 
 ## 3. Model training  
-I used the Multinomial Naive Bayes Classifier algorithm, which is well-suited for text classification problems.  
-Also, this algorithm benefits from a very fast cumputation time.
-With the current dataset, using this algorithm, **we obtain 77% accuracy**.
+I used the following algorithms which benefit from a very fast cumputation time. I also know that Multinomial Naive Bayes Classifier algorithm is well-suited for text classification problems, so I decided to try it out first.  
+
+Here is the accuracy for each algorithm, considering that the tokens are made of **Unigrams**.  
+
+| Algorithm           | Accuracy on training set | Accuracy on text set |
+|---------------------|--------------------------|----------------------|
+| Naive Bayes         | 0.81                     | 0.77                 |
+| SVM (Linear)        | 0.42                     | 0.35                 |
+| SVM (SGD)           | 0.78                     | 0.78                 |
+| Logistic Regression | 0.81                     | 0.80                 |
+
+All the algorithms, except for the Linear SVM, benefit from a good accuracy (~80% on test set).  
 
 ## 4. What's next  
 One main objective is to automatically keep gathering tweets through the Twitter API and calculate the polarity of these using emoticons. These would be then used by our model to keep learning and improve it's accuracy.  
