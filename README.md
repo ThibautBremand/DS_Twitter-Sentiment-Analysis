@@ -34,7 +34,24 @@ The method to calculate the polarity of the tweets in the training dataset is th
 
 [Example of negative tweet used in the Sentiment410 training set](https://twitter.com/Karoli/status/1467811193)  
 
-### 2.2 Data Wrangling  
+### 2.2 Dataset analysis
+
+#### 2.2.1 - Repartition of the polarity of tweets within the dataset 
+
+![Count](images/1-Counts.PNG?raw=true)
+
+The dataset contains 800k positive tweets and 800k negative tweets. Both tweet polarities are equally represented within our dataset.  
+
+#### 2.2.2 - Wordclouds of main words for both polarities
+
+Positive tweets wordcloud :  
+![PositiveWordcloud](images/2-Wordcloud1.png?raw=true)
+
+Negative tweets wordcloud :  
+![NegativeWordcloud](images/3-Wordcloud2.png?raw=true)
+
+
+### 2.3 Data Wrangling  
 The Data Wrangling method I chose to use is detailed under : https://stackabuse.com/the-naive-bayes-algorithm-in-python-with-scikit-learn  
 Each tweet is prepared as such :  
 - The tweets are converted into lowercase
@@ -48,6 +65,26 @@ In order to perform machine learning on text documents, we first need to turn th
 - The tweets are tokenized : the text is converted into arrays of tokens. I chose to use **Unigrams** as tokens, so each token will contain one word.  
 - The tokens are converted into word occurences using **CountVectorizer**  
 - These occurences are weighted and normalized using **Term Frequency Inverse Document Frequency (TFIDF)**. This technique intends to reflect how important a word is in the collection of tweets, by pounding it : Stop words impact will be limited, rare words will get special weight.  
+
+a) Five rows of the original dataset :
+
+| sentiment_score | id         | date                           | query    | author          | tweet                                               |
+|-----------------|------------|--------------------------------|----------|-----------------|-----------------------------------------------------|
+| 0               | 1467810369 | Mon   Apr 06 22:19:45 PDT 2009 | NO_QUERY | _TheSpecialOne_ | @switchfoot   http://twitpic.com/2y1zl - Awww, t... |
+| 0               | 1467810672 | Mon   Apr 06 22:19:49 PDT 2009 | NO_QUERY | scotthamilton   | is   upset that he can't update his Facebook by ... |
+| 0               | 1467810917 | Mon   Apr 06 22:19:53 PDT 2009 | NO_QUERY | mattycus        | @Kenichan   I dived many times for the ball. Man... |
+| 0               | 1467811184 | Mon   Apr 06 22:19:57 PDT 2009 | NO_QUERY | ElleCTF         | my   whole body feels itchy and like its on fire    |
+| 0               | 1467811193 | Mon   Apr 06 22:19:57 PDT 2009 | NO_QUERY | Karoli          | @nationwideclass   no, it's not behaving at all.... |
+
+b) The same rows with normalized, tokenized, and stemmed tweets  
+
+| sentiment_score | id         | date                           | query    | author          | tweet                                               |
+|-----------------|------------|--------------------------------|----------|-----------------|-----------------------------------------------------|
+| 0               | 1467810369 | Mon   Apr 06 22:19:45 PDT 2009 | NO_QUERY | _TheSpecialOne_ | [usernam,   url, aww, that, a, bummer, you, shou... |
+| 0               | 1467810672 | Mon   Apr 06 22:19:49 PDT 2009 | NO_QUERY | scotthamilton   | [is,   upset, that, he, cant, updat, hi, faceboo... |
+| 0               | 1467810917 | Mon   Apr 06 22:19:53 PDT 2009 | NO_QUERY | mattycus        | [usernam,   i, dive, mani, time, for, the, ball,... |
+| 0               | 1467811184 | Mon   Apr 06 22:19:57 PDT 2009 | NO_QUERY | ElleCTF         | [my,   whole, bodi, feel, itchi, and, like, it, ... |
+| 0               | 1467811193 | Mon   Apr 06 22:19:57 PDT 2009 | NO_QUERY | Karoli          | [usernam,   no, it, not, behav, at, all, im, mad... |
 
 ## 3. Model training  
 I used the following algorithms which benefit from a very fast cumputation time. I also know that Multinomial Naive Bayes Classifier algorithm is well-suited for text classification problems, so I decided to try it out first.  
