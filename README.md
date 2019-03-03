@@ -1,6 +1,6 @@
 # Data Science - Twitter Sentiment Analysis
-A Data Science project on Python Jupyter Notebook.  
-Prediction of the **polarity of tweets using a Naive Bayes classification model**, based on **emoticons**.  
+A Data Science project in Python, using Jupyter Notebook.  
+Prediction of the **polarity of tweets using multiple classification model**, based on **emoticons**.  
 
 One Notebook is about **building the dataset using the Twitter API**, the other one is about **training the Machine Learning model to predict the polarity of new tweets**.
 
@@ -86,7 +86,7 @@ b) The same rows with normalized, tokenized, and stemmed tweets
 | 0               | 1467811184 | Mon   Apr 06 22:19:57 PDT 2009 | NO_QUERY | ElleCTF         | [my,   whole, bodi, feel, itchi, and, like, it, ... |
 | 0               | 1467811193 | Mon   Apr 06 22:19:57 PDT 2009 | NO_QUERY | Karoli          | [usernam,   no, it, not, behav, at, all, im, mad... |
 
-## 3. Model training  
+## 3. Models training  
 I used the following algorithms which benefit from a very fast cumputation time. I also know that Multinomial Naive Bayes Classifier algorithm is well-suited for text classification problems, so I decided to try it out first.  
 
 Here is the accuracy for each algorithm, considering that the tokens are made of **Unigrams**.  
